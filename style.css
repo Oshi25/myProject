@@ -5,3 +5,17 @@
 #cipher-button {
     width: 100%
 }
+
+textarea {
+    border-radius: 10px 10px 10px 10px;
+}
+
+button {
+    border-radius: 10px 10px 10px 10px;
+    background-color: darkgreen;
+}
+
+select {
+    margin-bottom: 10px;
+    border-radius: 10px 10px 10px 10px;
+}
