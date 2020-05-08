@@ -7,10 +7,15 @@
 </head>
 <body>
 <div id="root">
-	<select id="cipher-select">
-		<option value="1">Шифр Цезаря</option>
-		<option value="2">Шифр Веженера</option>
-	</select>
+	<div>
+		<select id="cipher-select" onchange="showKey()">
+			<option value="1">Шифр Цезаря</option>
+			<option value="2">Шифр Веженера</option>
+		</select>
+	</div>
+	<div id="labelKey">
+		<label id="visibleLabel" hidden>Введите ключ: <input type="text" id="visibleInput"></label>
+	</div>
 	<div>
 		<textarea id="source-text" cols="40" rows="20" placeholder="Введите русский текст"></textarea>
 		<textarea id="cipher-text" cols="40" rows="20" readonly></textarea>

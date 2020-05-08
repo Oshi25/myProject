@@ -34,7 +34,7 @@ function caesar() {
 
 function vigenere() {
 	let sourceText = document.getElementById('source-text').value;
-	let key = 'хрюк';
+	let key = document.getElementById('visibleInput').value;
 	
 	let cipherText = '';
 	
@@ -54,3 +54,24 @@ function vigenere() {
 	
 	document.getElementById('cipher-text').textContent = cipherText;
 }
+
+function showKey() {
+	let selected = document.getElementById('cipher-select').value;
+	switch (selected) {
+		case '1':
+			hide();
+			break;
+		case '2':
+			show();
+			break;
+	}
+}
+
+function hide() {
+	document.getElementById('visibleLabel').hidden = true;
+}
+
+function show() {
+	document.getElementById('visibleLabel').hidden = false;
+}
+

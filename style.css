@@ -8,6 +8,7 @@
 
 textarea {
     border-radius: 10px 10px 10px 10px;
+    resize: none;
 }
 
 button {
@@ -18,4 +19,13 @@ button {
 select {
     margin-bottom: 10px;
     border-radius: 10px 10px 10px 10px;
+}
+
+#labelKey {
+    margin-bottom: 10px;
+}
+
+input {
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid darkgrey;
 }
